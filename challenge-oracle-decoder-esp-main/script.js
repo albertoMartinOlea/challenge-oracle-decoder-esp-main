@@ -54,7 +54,6 @@ function validarTexto(texto) {
         }
     }
     return true;
-
 }
 
  document.querySelector("#btn-copy").addEventListener("click", copiar);
