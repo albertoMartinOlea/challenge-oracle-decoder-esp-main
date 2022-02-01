@@ -47,7 +47,6 @@ botonDesencriptar.addEventListener("click", function (event) {
 function validarTexto(texto) {
 
     for (let i = 0; i < texto.length; i++) {
-        console.log(texto[i].charCodeAt());
         if (((texto[i].charCodeAt() < 97) || (texto[i].charCodeAt() > 122)) && (texto[i] != " ")) {
             alert("Solo minusculas");
             return false;
