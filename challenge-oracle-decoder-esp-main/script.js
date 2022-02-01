@@ -4,13 +4,11 @@ var botonEncriptar = document.querySelector("#btn-encriptar"); //relaciono el Ht
 botonEncriptar.addEventListener("click", function (event) {
     event.preventDefault();
     let textoEntrada = document.querySelector("#input-texto").value;
-    console.log(textoEntrada);
 
     if (validarTexto(textoEntrada)) {
         let textoEncriptado = "";
 
         for (let i = 0; i < textoEntrada.length; i++) {
-            //console.log(textoEntrada[i]);
 
             if (textoEntrada[i] == "a") {
                 textoEncriptado += "ai";
@@ -29,7 +27,6 @@ botonEncriptar.addEventListener("click", function (event) {
         }
 
         document.querySelector("#msg").value = textoEncriptado;
-        //console.log(textoEncriptado);
     }
 }
 )// fin  de la funcion anonima
